@@ -23,6 +23,12 @@ img {
     height: auto;
 }
 
+
+.logo {
+    width: 100%;
+    height: auto;
+}
+
 .layout{
     display: grid;
     grid-template-rows: 30vh 10vh 10vh 10vh 10vh 5vh 20vh;
