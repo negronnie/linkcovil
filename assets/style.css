@@ -124,6 +124,11 @@ img {
     border-radius: 8px;
 }
 
+.clearIntro{
+    visibility: hidden;
+    display: none;
+    opacity: 0;
+}
 
 @media screen and (width > 1440px) {
     .botao{
