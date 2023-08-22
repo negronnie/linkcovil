@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+
+body { 
+    font-family: Helvetica, sans-serif;
+    background-image: url('images/red.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat; 
+}
+
+a,
+ul,
+li { text-decoration: none; }
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+.layout{
+    display: grid;
+    grid-template-rows: 30vh 10vh 10vh 10vh 10vh 5vh 20vh;
+    gap: 1vh;
+    grid-template-areas:
+        'logo'
+        'whatsapp'
+        'instagram'
+        'email'
+        'site'
+        '.'
+        'rodape'
+    ;
+}
+
+.logo-area{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    grid-area: logo;
+    /* background-color: brown; */
+}
+
+.whats-area{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    grid-area: whatsapp;
+    /* background-color: cadetblue; */
+}
+
+.insta-area{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    grid-area: instagram;
+    /* background-color: forestgreen; */
+}
+
+.email-area{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    grid-area: email;
+    /* background-color: goldenrod; */
+}
+
+.site-area{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    grid-area: site;
+    /* background-color: indianred; */
+}
+
+.rodape-area{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-family: Arial, Helvetica, monospace;
+    padding: 12px;
+    color: white;
+    grid-area: rodape;
+    background-color: #101010;
+}
+
+
+.botao{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid white;
+    background-color: white;
+    color: black;
+    font-size: 18px;
+    font-family: Helvetica, sans-serif;
+    font-weight: 600;
+    border-radius: 8px;
+}
+
+
+@media screen and (width > 1279px) {
+    .botao{
+        height: 70px;
+        width: 400px;
+        font-size: 22px;
+    }
+    i {
+        margin-right: 5px;
+        font-size: 32px;
+    }
+}
+
+@media screen and (width < 1280px) {
+    .botao{
+        height: 50px;
+        width: 300px;
+    }
+    i {
+        margin-right: 5px;
+        font-size: 24px;
+    }
+}
