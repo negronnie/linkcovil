@@ -41,7 +41,7 @@ img {
 .layout{
     z-index: 1;
     display: grid;
-    grid-template-rows: 30vh 10vh 10vh 10vh 10vh 5vh 20vh;
+    grid-template-rows: 35vh 10vh 10vh 10vh 10vh 5vh 15vh;
     gap: 1vh;
     grid-template-areas:
         'logo'
