@@ -5624,8 +5624,14 @@ var logoCovil = lottie.loadAnimation({
     }
 });
 
-function startLogo (){
-    logoCovil.playSegments([0, 60],true)
-}
+// function startLogo (){
+//     var width = screen.width;
+    
+//     if (width > 1439) {
+//         logoCovil.playSegments([0, 60],true)
+//     }
 
-startLogo()
+    
+// }
+
+// startLogo()

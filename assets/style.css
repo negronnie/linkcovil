@@ -11,7 +11,8 @@ body {
     background-image: url('images/red.jpg');
     background-size: cover;
     background-position: center center;
-    background-repeat: no-repeat; 
+    background-repeat: no-repeat;
+    background-color: #000000;
 }
 
 a,
@@ -29,7 +30,16 @@ img {
     height: auto;
 }
 
+.introCovil{
+    z-index: 99;
+    pointer-events: none;
+    position: absolute;
+    width: 100%;
+    height: auto;
+}
+
 .layout{
+    z-index: 1;
     display: grid;
     grid-template-rows: 30vh 10vh 10vh 10vh 10vh 5vh 20vh;
     gap: 1vh;
@@ -115,7 +125,7 @@ img {
 }
 
 
-@media screen and (width > 1279px) {
+@media screen and (width > 1440px) {
     .botao{
         height: 70px;
         width: 400px;
@@ -125,9 +135,11 @@ img {
         margin-right: 5px;
         font-size: 32px;
     }
+
+
 }
 
-@media screen and (width < 1280px) {
+@media screen and (width < 1900px) {
     .botao{
         height: 50px;
         width: 300px;
@@ -136,4 +148,6 @@ img {
         margin-right: 5px;
         font-size: 24px;
     }
+
+
 }
